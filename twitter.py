@@ -1414,7 +1414,7 @@ class Api(object):
       parameters['since_id'] = since_id
     if not term:
       return []
-    parameters['q'] = urllib.quote_plus(term)
+    parameters['q'] = term
     parameters['show_user'] = show_user
     parameters['lang'] = lang
     parameters['rpp'] = per_page
